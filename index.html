@@ -10,40 +10,47 @@
     <meta charset="utf-8" />
     <meta content="IE=edge" http-equiv="X-UA-Compatible" />
     <title>Rock</title>
+    <link href="img/ico/favicon.ico" rel="shortcut icon">
     <meta content="" name="description" />
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,700|Inconsolata&display=swap"
+        rel="stylesheet">
+    <script crossorigin="anonymous" src="https://kit.fontawesome.com/0be298d007.js"></script>
     <meta content="width=device-width, initial-scale=1" name="viewport" />
     <link href="css/styles.css" rel="stylesheet" />
-    <script src="https://kit.fontawesome.com/0be298d007.js" crossorigin="anonymous"></script>
+    <script crossorigin="anonymous" src="https://kit.fontawesome.com/0be298d007.js"></script>
 </head>
 
 <body>
     <!--[if lt IE 7]>
-			<p class="browsehappy">
-				You are using an <strong>outdated</strong> browser. Please
-				<a href="#">upgrade your browser</a> to improve your experience.
-			</p>
-		<![endif]-->
+                                        			<p class="browsehappy">
+                                        				You are using an <strong>outdated</strong> browser. Please
+                                        				<a href="#">upgrade your browser</a> to improve your experience.
+                                        			</p>
+                                        		<![endif]-->
     <nav>
         <div class="wrapper navigation">
             <a href="#"><img alt="logo" src="img/logo.jpg" /></a>
             <ul>
-                <li><a href="#">Events</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Gallery</a></li>
-                <li><a href="#">Band</a></li>
-                <li><a href="#">Tickets</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#events">Events</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#band">Band</a></li>
+                <li><a href="#tickets">Tickets</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
     </nav>
     <section id="hero">
         <div class="wrapper">
-            <h3>Hero section with some bla bla</h3>
+            <div class="hero__title">
+                <h3>Live Music</h3>
+                <h4>Lorem ipsum dolor sit amet</h4>
+            </div>
         </div>
     </section>
     <header>
         <div class="wrapper">
-            <h1>We are Whatever the name is</h1>
+            <h1>Welcome to Whatever</h1>
             <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Laudantium, ut excepturi accusantium officia minus cumque
@@ -57,25 +64,55 @@
         <div class="wrapper">
             <h2>Events</h2>
             <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Velit quia nemo nesciunt asperiores odit itaque expedita
-                tempore explicabo placeat nam magnam voluptate ipsum dolorum
-                voluptas, reprehenderit deserunt ab quisquam maxime.
-            </p>
-            <div>Grid with hexagons</div>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+            <div class="grid__events">
+                <div class="event">
+                    <div class="event__ico">
+                        <i class="fab fa-acquisitions-incorporated"></i>
+                    </div>
+                    <div class="event__text">
+                        <h4>Bla</h4>
+                        <p>Lorem, ipsum dolor</p>
+                    </div>
+                </div>
+                <div class="event">
+                    <div class="event__ico">
+                        <i class="fab fa-acquisitions-incorporated"></i>
+                    </div>
+                    <div class="event__text">
+                        <h4>Bla</h4>
+                        <p>Lorem, ipsum dolor</p>
+                    </div>
+                </div>
+                <div class="event">
+                    <div class="event__ico">
+                        <i class="fab fa-acquisitions-incorporated"></i>
+                    </div>
+                    <div class="event__text">
+                        <h4>Bla</h4>
+                        <p>Lorem, ipsum dolor</p>
+                    </div>
+                </div>
+
+            </div>
         </div>
     </section>
     <section id="about">
         <div class="wrapper">
-            <img src="img/band.jpg" alt="band" />
-            <div class="band-bio">
-                <h2>Band Bio</h2>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing
-                    elit. Maiores ducimus sapiente possimus eos numquam
-                    culpa nisi obcaecati ad. Perferendis ad in autem nisi
-                    enim fuga nam a iusto beatae recusandae!
-                </p>
+            <h2>Band Bio</h2>
+            <div class="band__bio">
+                <img alt="musician" class="bio__img" src="img/musician-1658887_1920.jpg" />
+                <div class="bio__text">
+                    <h3>High Quality Process</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing
+                        elit. Maiores ducimus sapiente possimus eos numquam
+                        culpa nisi obcaecati ad. Perferendis ad in autem nisi
+                        enim fuga nam a iusto beatae recusandae!
+                    </p>
+                    <button class=" btn btn--primary">Learn more</button>
+                </div>
             </div>
         </div>
     </section>
@@ -102,9 +139,9 @@
     <section id="map">
         <div class="wrapper">
             <h2>Location</h2>
-            <iframe width="100%" height="300" frameborder="0" style="border:0"
+            <iframe allowfullscreen frameborder="0" height="300"
                 src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJ8aZKIBoULw0RmnqxKY95e7Y&key=AIzaSyA1X2nA79EjyxoUuGNVPAvq50ly4AH3ZDA"
-                allowfullscreen></iframe>
+                style="border:0" width="100%"></iframe>
         </div>
     </section>
     <footer>
