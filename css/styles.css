@@ -1,0 +1,99 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+}
+
+html,
+body {
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.wrapper {
+	max-width: 1000px;
+	margin: 0 auto;
+	padding: 1em;
+}
+
+nav {
+	background-color: #353535;
+	color: white;
+	height: 3em;
+}
+
+.navigation {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+
+	/* this is not aligning center in the div without the padding in the wrapper */
+}
+
+.navigation li {
+	display: inline-block;
+}
+
+.navigation a:link,
+a:active,
+a:visited {
+	color: #d6d6d6;
+	text-decoration: none;
+	margin: 0 1em;
+}
+
+.navigation li:hover {
+	background-color: purple;
+
+	/* tfix this so it stretches in a boxy way*/
+}
+
+/* HERO */
+
+#hero h3 {
+	max-width: 300px;
+	margin: 0 auto;
+	background-color: #24002477;
+	font-size: 2em;
+	color: white;
+	padding: 2em;
+}
+
+header {
+	background-color: #773da8;
+	color: #d6d6d6;
+}
+
+#events {
+	background-color: #353535;
+	color: #d6d6d6;
+}
+
+#about {
+	color: #353535;
+	background-color: #d6d6d6;
+}
+
+#gallery {
+	background-color: #bc386f;
+	color: #d6d6d6;
+}
+
+#tickets {
+	background-color: #353535;
+	color: #d6d6d6;
+}
+
+#members {
+	color: #353535;
+	background-color: #d6d6d6;
+}
+
+#contact {
+	background-color: #773da8;
+	color: #d6d6d6;
+}
+
+footer {
+	background-color: #353535;
+	color: #d6d6d6;
+}
