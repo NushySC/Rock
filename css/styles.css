@@ -363,7 +363,6 @@ header {
 }
 
 .ticket {
-  min-height: 40vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -397,7 +396,7 @@ header {
   height: 50%;
 }
 
-.top-2 span:nth-child(2) {
+.top-2 div:nth-child(2) {
   font-size: 2em;
 }
 
@@ -411,6 +410,10 @@ header {
 
 /* CONTACT */
 
+form {
+  width: 70vw;
+  margin: 0 auto;
+}
 #contact {
   background-color: var(--secondary-color);
   color: var(--light-color);
@@ -420,27 +423,45 @@ header {
 .contact--event {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   padding: 2em;
   margin-bottom: 2em;
 }
 
 input,
-textarea {
+textarea,
+select {
   background-color: transparent;
   border: 1px solid transparent;
   border-bottom: 2px solid var(--fourth-color);
-  margin-bottom: 0.8em;
   width: 80%;
+  padding: 0.5em;
   color: var(--light-color);
+  margin-bottom: 0.8em;
+}
+label {
+  margin-bottom: 0.4em;
+}
+option {
+  background-color: var(--fourth-color);
+  color: var(--light-color);
+  font-size: 1.5em;
+}
+
+option:hover {
+  background-color: var(--fourth-color);
+  color: var(--primary-color);
 }
 
 input:focus,
 textarea:focus {
   background-color: #255c51;
-  border: 2px solid transparent;
+  border: 1px solid transparent;
   color: var(--light-color);
+  outline: 1px solid transparent;
+  border-bottom: 2px solid var(--fourth-color);
 }
-
 
 /* MAP */
 #map {
@@ -483,13 +504,48 @@ footer ul {
 .one-3:nth-child(3) {
   text-align: right;
 }
+
 .one-3 i {
   margin: 0.4em;
   color: var(--tertiary-color);
+}
+
+.one-3 i:hover {
+  color: var(--fourth-color);
 }
 
 .footer__flex {
   display: flex;
   flex-direction: row;
   margin-bottom: 3em;
+}
+
+@media (max-width: 600px) {
+  .grid__events,
+  .band__bio,
+  .grid__gallery,
+  .grid__tickets,
+  .grid__team,
+  .footer__flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .bio__img,
+  .bio__text,
+  .team__member,
+  .one-3 {
+    width: 90%;
+  }
+
+  .gallery__item,
+  .ticket,
+  .team__member {
+    margin-bottom: 1em;
+  }
+
+  .one-3:nth-child(2) {
+    order: 3;
+    margin-top: 1em;
+  }
 }
