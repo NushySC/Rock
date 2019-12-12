@@ -429,6 +429,9 @@ form {
   margin-bottom: 2em;
 }
 
+fieldset {
+  border: 1px solid rgba(255, 255, 255, 0.274);
+}
 input,
 textarea,
 select {
@@ -517,6 +520,7 @@ footer ul {
 .footer__flex {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   margin-bottom: 3em;
 }
 
@@ -534,7 +538,8 @@ footer ul {
   .bio__img,
   .bio__text,
   .team__member,
-  .one-3 {
+  .one-3, 
+  form {
     width: 90%;
   }
 
@@ -548,4 +553,20 @@ footer ul {
     order: 3;
     margin-top: 1em;
   }
+
+  .one-3:nth-child(3) {
+    margin-top: 2em;
+
+  }
+.contact--event, 
+.contact--personal {
+  padding: .5em;
+}
+#contact {
+  padding: .5em;
+}
+input {
+  padding: 0;
+  width: 100%;
+}
 }
