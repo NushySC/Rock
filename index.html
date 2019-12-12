@@ -12,7 +12,8 @@
     <title>Rock</title>
     <link href="img/ico/favicon.ico" rel="shortcut icon">
     <meta content="" name="description" />
-    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,700|Inconsolata&display=swap"rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,700|Inconsolata&display=swap"
+        rel="stylesheet">
     <script crossorigin="anonymous" src="https://kit.fontawesome.com/0be298d007.js"></script>
     <meta content="width=device-width, initial-scale=1" name="viewport" />
     <link href="css/styles.css" rel="stylesheet" />
@@ -20,20 +21,17 @@
 </head>
 
 <body>
-    <!--[if lt IE 7]>
-                                                			<p class="browsehappy">
-                                                				You are using an <strong>outdated</strong> browser. Please
-                                                				<a href="#">upgrade your browser</a> to improve your experience.
-                                                			</p>
-                                                		<![endif]-->
+    <!--[if lt IE 7]> <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p><![endif]-->
     <nav>
         <div class="wrapper navigation">
-            <a href="#"><img alt="logo" src="img/logo.jpg" /></a>
+            <a href="#">
+                <div class="logo"><img alt="logo" src="img/logo.svg" /><span>Logo</span></div>
+            </a>
             <ul>
                 <li><a href="#events">Events</a></li>
                 <li><a href="#about">About Us</a></li>
                 <li><a href="#gallery">Gallery</a></li>
-                <li><a href="#band">Band</a></li>
+                <li><a href="#members">Band</a></li>
                 <li><a href="#tickets">Tickets</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
@@ -153,22 +151,28 @@
             <h2>Gallery</h2>
             <div class="grid__gallery">
                 <div class="gallery__item">
-                    <img alt="" class="gallery__img" src="img/drummer.jpg">
+                    <img alt="" class="gallery__img" src="img/drummer.jpg"/>
+                    <div class="gallery__info"><p>Check them out!</p><a href="http://www.bandcamp.com"><i class="fab fa-bandcamp"></i></a></div>
                 </div>
                 <div class="gallery__item">
                     <img alt="" class="gallery__img" src="img/guitar-3131893_1920.jpg">
+                    <div class="gallery__info"><p>Check them out!</p><a href="http://www.bandcamp.com"><i class="fab fa-bandcamp"></i></a></div>
                 </div>
                 <div class="gallery__item">
                     <img alt="" class="gallery__img" src="img/hostile-886029_1920.jpg">
+                    <div class="gallery__info"><p>Check them out!</p><a href="http://www.bandcamp.com"><i class="fab fa-bandcamp"></i></a></div>
                 </div>
                 <div class="gallery__item">
                     <img alt="" class="gallery__img" src="img/people-852427_1920.jpg">
+                    <div class="gallery__info"><p>Check them out!</p><a href="http://www.bandcamp.com"><i class="fab fa-bandcamp"></i></a></div>
                 </div>
                 <div class="gallery__item">
                     <img alt="" class="gallery__img" src="img/crowd.jpg">
+                    <div class="gallery__info"><p>Check them out!</p><a href="http://www.bandcamp.com"><i class="fab fa-bandcamp"></i></a></div>
                 </div>
                 <div class="gallery__item">
                     <img alt="" class="gallery__img" src="img/singer-690117_1920.jpg">
+                    <div class="gallery__info"><p>Check them out!</p><a href="http://www.bandcamp.com"><i class="fab fa-bandcamp"></i></a></div>
                 </div>
 
             </div>
@@ -190,7 +194,7 @@
                     <img alt="team" class="team__img" src="img/teamOne.jpg" />
                     <hgroup>
                         <h5>Thomas Something</h5>
-                        <p>Therible guitar player</p>
+                        <p>Terrible guitar player</p>
                     </hgroup>
                 </div>
                 <div class="team__member">
@@ -213,6 +217,61 @@
     <section id="tickets">
         <div class="wrapper">
             <h2>Tickets</h2>
+            <div class="grid__tickets">
+                <div class="ticket">
+                    <div class="top">
+                        <div class="top-1">$45</div>
+                        <div class="top-2">
+                            <span>per month</span>
+                            <span>basic</span>
+                        </div>
+                    </div>
+                    <div class="bottom">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <button class="btn btn--primary">Order now!</button>
+                    </div>
+                </div>
+                <div class="ticket">
+                        <div class="top">
+                            <div class="top-1">$55</div>
+                            <div class="top-2">
+                                <span>per month</span>
+                                <span>basic</span>
+                            </div>
+                        </div>
+                        <div class="bottom">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <button class="btn btn--primary">Order now!</button>
+                        </div>
+                    </div>
+                    <div class="ticket">
+                            <div class="top">
+                                <div class="top-1">$65</div>
+                                <div class="top-2">
+                                    <span>per month</span>
+                                    <span>basic</span>
+                                </div>
+                            </div>
+                            <div class="bottom">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                <button class="btn btn--primary">Order now!</button>
+                            </div>
+                        </div>
+                        <div class="ticket">
+                                <div class="top">
+                                    <div class="top-1">$95</div>
+                                    <div class="top-2">
+                                        <span>per month</span>
+                                        <span>basic</span>
+                                    </div>
+                                </div>
+                                <div class="bottom">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    <button class="btn btn--primary">Order now!</button>
+                                </div>
+                            </div>
+            </div>
+
         </div>
     </section>
     <section id="contact">
@@ -232,12 +291,12 @@
                     <legend>Event Data</legend>
                     <label>Events</label>
 
-                    <select name="events">
-                        <option value="Concert">Concert</option>
-                        <option value="Art Show">Art Show</option>
-                        <option value="poetry">Poetry</option>
-                        <option value="Theatre">Theatre</option>
-                    </select>
+                        <select name="events">
+                            <option value="Concert">Concert</option>
+                            <option value="Art Show">Art Show</option>
+                            <option value="poetry">Poetry</option>
+                            <option value="Theatre">Theatre</option>
+                        </select>
 
                     <!--                         <input list="events" name="events">
                         <datalist id="events">
@@ -271,10 +330,9 @@
                 <div class="one-3">
                     <address>
                         <p>Amazing Company, Inc.</p>
-                        <p>12345 NewYork, <p>
-                                <p>United States
-                                    <p>94107
-                                        P: (123) 456-7890</p>
+                        <p>12345 NewYork,</p>
+                        <p>United States, 94107</p>
+                        <p> (123) 456-7890</p>
                     </address>
                 </div>
                 <div class="one-3">
