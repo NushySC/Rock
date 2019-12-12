@@ -16,7 +16,8 @@ font-family: 'Inconsolata', monospace; */
 
 /* DECORATION */
 
-html, body {
+html,
+body {
 	font-family: 'Inconsolata', monospace;
 }
 
@@ -27,14 +28,15 @@ h1 {
 	margin: 1em 0;
 
 }
- h2 {
-	 font-size: 2em;
-	 font-family: 'IBM Plex Sans', sans-serif;
-	 text-align: center;
-	 margin: 1em auto;
-	 display: inline-block;
-	 border-bottom: .2em solid;
- }
+
+h2 {
+	font-size: 2em;
+	font-family: 'IBM Plex Sans', sans-serif;
+	text-align: center;
+	margin: 1em auto;
+	display: inline-block;
+	border-bottom: .2em solid;
+}
 
 p {
 	line-height: 1.4em;
@@ -52,6 +54,7 @@ section {
 	padding: 2em;
 	height: auto;
 }
+
 .btn {
 	padding: 1em;
 	border-radius: .2em;
@@ -63,6 +66,7 @@ section {
 	background-color: var(--primary-color);
 	color: var(--light-color);
 }
+
 .btn--primary:hover {
 	border: 1px solid;
 	background-color: transparent;
@@ -73,6 +77,7 @@ section {
 	background-color: var(--fourth-color);
 	color: var(--light-color);
 }
+
 .btn--secondary:hover {
 	border: 1px solid;
 	background-color: transparent;
@@ -91,27 +96,32 @@ nav {
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
+	height: 100%;
 
 	/* this is not aligning center in the div without the padding in the wrapper */
 }
 
+nav ul {
+	list-style-type: none;
+}
+
 .navigation li {
-	display: inline;
+	display: inline-block;
+	text-align: center;
+	padding: .7em;
+
 }
 
 .navigation a:link,
 a:active,
 a:visited {
-	color:var(--light-color);
+	color: var(--light-color);
 	text-decoration: none;
-	padding: 0 .5em;
 	font-size: .9em;
 }
 
 .navigation li:hover {
-	background-color: var(--secondary-color);
-
-	/* tfix this so it stretches in a boxy way*/
+	background-color: var(--fourth-color);
 }
 
 /* HERO */
@@ -151,8 +161,10 @@ a:visited {
 /* HEADER */
 
 header {
-	background-color: var(--light-color);;
-	color: var(--primary-color);;
+	background-color: var(--light-color);
+	;
+	color: var(--primary-color);
+	;
 }
 
 /* BIO */
@@ -172,7 +184,7 @@ header {
 	width: 45%;
 }
 
-.bio__text h3{
+.bio__text h3 {
 	margin-bottom: 1em;
 }
 
@@ -185,7 +197,8 @@ header {
 /* EVENTS */
 
 #events {
-	background-color: var(--tertiary-color);;
+	background-color: var(--tertiary-color);
+	;
 	color: var(--light-color);
 }
 
@@ -207,12 +220,12 @@ header {
 	margin: 0 auto;
 }
 
-.event__text h4{
+.event__text h4 {
 	color: var(--fourth-color);
 	margin: .7em 0;
 }
 
-.event__text p{
+.event__text p {
 	font-size: .8em;
 }
 
@@ -220,7 +233,8 @@ header {
 /* GALLERY */
 
 #gallery {
-	background-color: var(--primary-color);;
+	background-color: var(--primary-color);
+	;
 	color: var(--light-color);
 }
 
@@ -232,13 +246,11 @@ header {
 
 }
 
-.gallery__item {
-
-}
+.gallery__item {}
 
 .gallery__img {
 	width: 100%;
-    height: 100%;
+	height: 100%;
 	object-fit: cover;
 	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.267);
 }
@@ -298,7 +310,8 @@ header {
 /* CONTACT */
 
 #contact {
-	background-color: var(--secondary-color);;
+	background-color: var(--secondary-color);
+	;
 	color: var(--light-color);
 }
 
@@ -310,7 +323,8 @@ header {
 	margin-bottom: 2em;
 }
 
-input, textarea {
+input,
+textarea {
 	background-color: transparent;
 	border: 1px solid transparent;
 	border-bottom: 2px solid var(--fourth-color);
@@ -319,7 +333,8 @@ input, textarea {
 	color: var(--light-color);
 }
 
-input:focus, textarea:focus {
+input:focus,
+textarea:focus {
 	background-color: #255c51;
 	border: 2px solid transparent;
 	color: var(--light-color);
@@ -328,13 +343,15 @@ input:focus, textarea:focus {
 
 /* MAP */
 #map {
-	background-color: var(--tertiary-color);;
+	background-color: var(--tertiary-color);
+	;
 	color: var(--light-color);
 }
 
 /* FOOTER */
 footer {
-	background-color: var(--primary-color);;
+	background-color: var(--primary-color);
+	;
 	color: var(--light-color);
 	padding: 2em;
 	font-size: .8em;
@@ -358,12 +375,12 @@ footer ul {
 	flex-direction: row;
 	justify-content: space-between;
 	font-size: 1.7em;
-  }
+}
 
-  .one-3 i {
-	  margin: .4em;
-	  color: var(--tertiary-color);
-  }
+.one-3 i {
+	margin: .4em;
+	color: var(--tertiary-color);
+}
 
 .footer__flex {
 	display: flex;
