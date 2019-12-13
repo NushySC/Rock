@@ -22,21 +22,31 @@
 
 <body>
     <!--[if lt IE 7]> <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p><![endif]-->
-    <nav>
-        <div class="wrapper navigation">
-            <a href="#">
-                <div class="logo"><img alt="logo" src="img/logo.svg" /><span>Logo</span></div>
-            </a>
-            <ul>
-                <li><a href="#events">Events</a></li>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#gallery">Gallery</a></li>
-                <li><a href="#members">Band</a></li>
-                <li><a href="#tickets">Tickets</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+    <section id="nav">
+        <div class="wrapper">
+            <nav class="nav">
+                <a href="#">
+                    <div class="logo">
+                        
+                        <img alt="logo" src="img/logo.svg" />
+                        <div>Logo</div>
+                    </div>
+                </a>
+                <div class="navbar__toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <ul class="nav__links">
+                    <li><a href="#events">Events</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#members">Band</a></li>
+                    <li><a href="#tickets">Tickets</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
         </div>
-    </nav>
+    </section>
+
     <section id="hero">
         <div class="slider">
             <div class="img__slider">
@@ -54,8 +64,7 @@
     <header>
         <div class="wrapper">
             <h1>Welcome to Whatever</h1>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Laudantium, ut excepturi accusantium officia minus cumque
                 perferendis voluptates nisi quas omnis fugit magnam fuga,
                 delectus quisquam repudiandae porro eligendi reprehenderit
@@ -157,28 +166,40 @@
             <h2>Gallery</h2>
             <div class="grid__gallery">
                 <div class="gallery__item">
-                    <img alt="" class="gallery__img" src="img/drummer.jpg"/>
-                    <div class="gallery__info"><p>Check them out!</p><a href="http://www.bandcamp.com"><i class="fab fa-bandcamp"></i></a></div>
+                    <img alt="" class="gallery__img" src="img/drummer.jpg" />
+                    <div class="gallery__info">
+                        <p>Check them out!</p><a href="http://www.bandcamp.com"><i class="fab fa-bandcamp"></i></a>
+                    </div>
                 </div>
                 <div class="gallery__item">
                     <img alt="" class="gallery__img" src="img/guitar-3131893_1920.jpg">
-                    <div class="gallery__info"><p>Check them out!</p><a href="http://www.bandcamp.com"><i class="fab fa-bandcamp"></i></a></div>
+                    <div class="gallery__info">
+                        <p>Check them out!</p><a href="http://www.bandcamp.com"><i class="fab fa-bandcamp"></i></a>
+                    </div>
                 </div>
                 <div class="gallery__item">
                     <img alt="" class="gallery__img" src="img/hostile-886029_1920.jpg">
-                    <div class="gallery__info"><p>Check them out!</p><a href="http://www.bandcamp.com"><i class="fab fa-bandcamp"></i></a></div>
+                    <div class="gallery__info">
+                        <p>Check them out!</p><a href="http://www.bandcamp.com"><i class="fab fa-bandcamp"></i></a>
+                    </div>
                 </div>
                 <div class="gallery__item">
                     <img alt="" class="gallery__img" src="img/people-852427_1920.jpg">
-                    <div class="gallery__info"><p>Check them out!</p><a href="http://www.bandcamp.com"><i class="fab fa-bandcamp"></i></a></div>
+                    <div class="gallery__info">
+                        <p>Check them out!</p><a href="http://www.bandcamp.com"><i class="fab fa-bandcamp"></i></a>
+                    </div>
                 </div>
                 <div class="gallery__item">
                     <img alt="" class="gallery__img" src="img/crowd.jpg">
-                    <div class="gallery__info"><p>Check them out!</p><a href="http://www.bandcamp.com"><i class="fab fa-bandcamp"></i></a></div>
+                    <div class="gallery__info">
+                        <p>Check them out!</p><a href="http://www.bandcamp.com"><i class="fab fa-bandcamp"></i></a>
+                    </div>
                 </div>
                 <div class="gallery__item">
                     <img alt="" class="gallery__img" src="img/singer-690117_1920.jpg">
-                    <div class="gallery__info"><p>Check them out!</p><a href="http://www.bandcamp.com"><i class="fab fa-bandcamp"></i></a></div>
+                    <div class="gallery__info">
+                        <p>Check them out!</p><a href="http://www.bandcamp.com"><i class="fab fa-bandcamp"></i></a>
+                    </div>
                 </div>
 
             </div>
@@ -204,82 +225,82 @@
                     </div>
                 </div>
                 <div class="ticket">
-                        <div class="top">
-                            <div class="top-1">$55</div>
-                            <div class="top-2">
-                                <div>per month</div>
-                                <div>silver</div>
-                            </div>
-                        </div>
-                        <div class="bottom">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                            <button class="btn btn--primary">Order now!</button>
+                    <div class="top">
+                        <div class="top-1">$55</div>
+                        <div class="top-2">
+                            <div>per month</div>
+                            <div>silver</div>
                         </div>
                     </div>
-                    <div class="ticket">
-                            <div class="top">
-                                <div class="top-1">$65</div>
-                                <div class="top-2">
-                                    <div>per month</div>
-                                    <div>gold</div>
-                                </div>
-                            </div>
-                            <div class="bottom">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                                <button class="btn btn--primary">Order now!</button>
-                            </div>
+                    <div class="bottom">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <button class="btn btn--primary">Order now!</button>
+                    </div>
+                </div>
+                <div class="ticket">
+                    <div class="top">
+                        <div class="top-1">$65</div>
+                        <div class="top-2">
+                            <div>per month</div>
+                            <div>gold</div>
                         </div>
-                        <div class="ticket">
-                                <div class="top">
-                                    <div class="top-1">$95</div>
-                                    <div class="top-2">
-                                        <div>per month</div>
-                                        <div>premium</div>
-                                    </div>
-                                </div>
-                                <div class="bottom">
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                                    <button class="btn btn--primary">Order now!</button>
-                                </div>
-                            </div>
+                    </div>
+                    <div class="bottom">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <button class="btn btn--primary">Order now!</button>
+                    </div>
+                </div>
+                <div class="ticket">
+                    <div class="top">
+                        <div class="top-1">$95</div>
+                        <div class="top-2">
+                            <div>per month</div>
+                            <div>premium</div>
+                        </div>
+                    </div>
+                    <div class="bottom">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <button class="btn btn--primary">Order now!</button>
+                    </div>
+                </div>
             </div>
 
         </div>
     </section>
 
     <section id="members">
-            <div class="wrapper">
-                <h2>Team Members</h2>
-                <div class="grid__team">
-                    <div class="team__member">
-                        <img alt="team" class="team__img" src="img/team4.jpg" />
-                        <hgroup>
-                            <h5>Jane Doe</h5>
-                            <p>Saxophone player</p>
-                        </hgroup>
-                    </div>
-                    <div class="team__member">
-                        <img alt="team" class="team__img" src="img/teamOne.jpg" />
-                        <hgroup>
-                            <h5>Thomas Something</h5>
-                            <p>Terrible guitar player</p>
-                        </hgroup>
-                    </div>
-                    <div class="team__member">
-                        <img alt="team" class="team__img" src="img/teamTwo.jpg" />
-                        <hgroup>
-                            <h5>Dorotea Nyogawe</h5>
-                            <p>Saxophone player</p>
-                        </hgroup>
-                    </div>
-                    <div class="team__member">
-                        <img alt="team" class="team__img" src="img/teamThree.jpg" />
-                        <hgroup>
-                            <h5>Jason Sucks</h5>
-                            <p>Boring Songwriter</p>
-                        </hgroup>
-                    </div>
+        <div class="wrapper">
+            <h2>Team Members</h2>
+            <div class="grid__team">
+                <div class="team__member">
+                    <img alt="team" class="team__img" src="img/team4.jpg" />
+                    <hgroup>
+                        <h5>Jane Doe</h5>
+                        <p>Saxophone player</p>
+                    </hgroup>
                 </div>
+                <div class="team__member">
+                    <img alt="team" class="team__img" src="img/teamOne.jpg" />
+                    <hgroup>
+                        <h5>Thomas Something</h5>
+                        <p>Terrible guitar player</p>
+                    </hgroup>
+                </div>
+                <div class="team__member">
+                    <img alt="team" class="team__img" src="img/teamTwo.jpg" />
+                    <hgroup>
+                        <h5>Dorotea Nyogawe</h5>
+                        <p>Saxophone player</p>
+                    </hgroup>
+                </div>
+                <div class="team__member">
+                    <img alt="team" class="team__img" src="img/teamThree.jpg" />
+                    <hgroup>
+                        <h5>Jason Sucks</h5>
+                        <p>Boring Songwriter</p>
+                    </hgroup>
+                </div>
+            </div>
         </div>
     </section>
     <section id="contact">
@@ -299,12 +320,12 @@
                     <legend>Event Data</legend>
                     <label>Events</label>
 
-                        <select name="events">
-                            <option value="Concert">Concert</option>
-                            <option value="Art Show">Art Show</option>
-                            <option value="poetry">Poetry</option>
-                            <option value="Theatre">Theatre</option>
-                        </select>
+                    <select name="events">
+                        <option value="Concert">Concert</option>
+                        <option value="Art Show">Art Show</option>
+                        <option value="poetry">Poetry</option>
+                        <option value="Theatre">Theatre</option>
+                    </select>
 
                     <!--                         <input list="events" name="events">
                         <datalist id="events">
@@ -361,7 +382,7 @@
             </div>
             <small>© 2019 Anuska Sampedro by <a href="https://www.anuskasampedro.com">anuskasampedro.com</a></small>
     </footer>
-
+    <script async defer src="js/jquery.min.js"></script>
     <script async defer src="js/index.js"></script>
 </body>
 
