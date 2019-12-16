@@ -86,6 +86,14 @@ section {
 	color: var(--fourth-color);
 }
 
+.btn--sorting {
+	border: 1px solid var(--fourth-color);
+	color: var(--fourth-color);
+	background-color: transparent;
+	padding: .5em;
+	border-radius: .2em;
+}
+
 #nav {
 	background-color: var(--primary-color);
 	color: white;
@@ -315,6 +323,18 @@ header p {
 	object-fit: cover;
 	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.267);
 }
+
+.sorting {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	margin-bottom: 2em;
+}
+
+.hide {
+	display: none;
+}
+
 
 /* TEAM */
 
