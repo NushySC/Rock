@@ -556,9 +556,13 @@ footer ul {
   .bio__img,
   .bio__text,
   .team__member,
-  .one-3, 
+  .one-3,
   form {
     width: 90%;
+  }
+
+  .bio__text h3 {
+    margin-top: 1em;
   }
 
   .gallery__item,
@@ -574,57 +578,152 @@ footer ul {
 
   .one-3:nth-child(3) {
     margin-top: 2em;
-
   }
-.contact--event, 
-.contact--personal {
-  padding: .5em;
-}
-#contact {
-  padding: .5em;
-}
-input {
-  padding: 0;
-  width: 100%;
+  .contact--event,
+  .contact--personal {
+    padding: 0.5em;
+  }
+  #contact {
+    padding: 0.5em;
+  }
+  input {
+    padding: 0;
+    width: 100%;
+  }
+
+  .nav {
+    margin-top: 0.4em;
+  }
+  .navbar__toggle {
+    display: block;
+    cursor: pointer;
+  }
+
+  .nav__links {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 40px;
+    right: -200px;
+    background-color: var(--primary-color);
+    margin: 0;
+    padding: 0;
+    transition: all 1s ease;
+  }
+
+  .nav__links.show {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 40px;
+    right: 0;
+    margin: 0;
+    padding: 0;
+  }
+
+  .nav__links.show li {
+    padding: 10px 30px;
+    background-color: var(--primary-color);
+  }
+
+  .nav__links.show li:hover {
+    padding: 10px 30px;
+    background-color: var(--fourth-color);
+  }
 }
 
-.nav {
-  margin-top: .4em;
-}
-.navbar__toggle {
-  display: block;
+/* HAMBURGER ANIMATED  */
+
+.hamburger {
+  display: inline-block;
   cursor: pointer;
-}
-
-.nav__links {
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-  top: 40px;
-  right: -200px;
-  background-color: var(--primary-color);
+  transition-property: opacity, filter;
+  transition-duration: 0.15s;
+  transition-timing-function: linear;
+  font: inherit;
+  color: white;
+  text-transform: none;
+  background-color: transparent;
+  border: 0;
   margin: 0;
-  padding: 0;
-  transition: all 1s ease;
+  overflow: visible;
+}
+.hamburger:hover {
+  opacity: 0.7;
+}
+.hamburger.is-active:hover {
+  opacity: 0.7;
+}
+.hamburger.is-active .hamburger-inner,
+.hamburger.is-active .hamburger-inner::before,
+.hamburger.is-active .hamburger-inner::after {
+  background-color: white;
 }
 
-.nav__links.show {
-  display: flex;
-  flex-direction: column;
+.hamburger-box {
+  width: .7em;
+  height: .7em;
+  display: inline-block;
+  position: relative;
+}
+
+.hamburger-inner {
+  display: block;
+  top: 50%;
+  margin-top: -1px;
+}
+.hamburger-inner,
+.hamburger-inner::before,
+.hamburger-inner::after {
+  width: 1.8em;
+  height: .2em;
+  background-color: white;
+  border-radius: 4px;
   position: absolute;
-  top: 40px;
-  right: 0;
-  margin: 0;
-  padding: 0;
+  transition-property: transform;
+  transition-duration: 0.15s;
+  transition-timing-function: ease;
+}
+.hamburger-inner::before,
+.hamburger-inner::after {
+  content: "";
+  display: block;
+}
+.hamburger-inner::before {
+  top: -10px;
+}
+.hamburger-inner::after {
+  bottom: -10px;
 }
 
-.nav__links.show li{
-  padding:10px 30px;
-  background-color: var(--primary-color);
+/*
+     * Spin
+     */
+.hamburger--spin .hamburger-inner {
+  transition-duration: 0.22s;
+  transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+.hamburger--spin .hamburger-inner::before {
+  transition: top 0.1s 0.25s ease-in, opacity 0.1s ease-in;
+}
+.hamburger--spin .hamburger-inner::after {
+  transition: bottom 0.1s 0.25s ease-in,
+    transform 0.22s cubic-bezier(0.55, 0.055, 0.675, 0.19);
 }
 
-.nav__links.show li:hover{
-  padding:10px 30px;
-  background-color: var(--fourth-color);
+.hamburger--spin.is-active .hamburger-inner {
+  transform: rotate(225deg);
+  transition-delay: 0.12s;
+  transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
 }
+.hamburger--spin.is-active .hamburger-inner::before {
+  top: 0;
+  opacity: 0;
+  transition: top 0.1s ease-out, opacity 0.1s 0.12s ease-out;
+}
+.hamburger--spin.is-active .hamburger-inner::after {
+  bottom: 0;
+  transform: rotate(-90deg);
+  transition: bottom 0.1s ease-out,
+  transform 0.22s 0.12s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
