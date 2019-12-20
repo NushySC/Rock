@@ -10,10 +10,10 @@
     <meta charset="utf-8" />
     <meta content="IE=edge" http-equiv="X-UA-Compatible" />
     <title>Rock</title>
-    <link href="img/ico/favicon.ico" rel="shortcut icon" />
+    <link href="img/ico/favicon.ico" rel="shortcut icon">
     <meta content="" name="description" />
-    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,700%7CInconsolata&display=swap"
-        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,700|Inconsolata&display=swap"
+        rel="stylesheet">
     <script crossorigin="anonymous" src="https://kit.fontawesome.com/0be298d007.js"></script>
     <meta content="width=device-width, initial-scale=1" name="viewport" />
     <link href="css/styles.css" rel="stylesheet" />
@@ -32,12 +32,19 @@
             <nav class="nav">
                 <a href="#">
                     <div class="logo">
+
                         <img alt="logo" src="img/logo.svg" />
                         <div>Logo</div>
                     </div>
                 </a>
                 <div class="navbar__toggle">
-                    <i class="fas fa-bars"></i>
+                    <!-- <i class="fas fa-bars"></i> -->
+                    <button class="hamburger hamburger--spin" type="button">
+                        <span class="hamburger-box">
+                            <span class="hamburger-inner"></span>
+                        </span>
+                    </button>
+
                 </div>
                 <ul class="nav__links">
                     <li><a href="#events">Events</a></li>
@@ -54,7 +61,7 @@
     <section id="hero">
         <!-- <div class="slider">
             <div class="img__slider">
-                <img src="" alt="">
+                
             </div>
 
         </div> -->
@@ -68,8 +75,7 @@
     <header>
         <div class="wrapper">
             <h1>Welcome to Whatever</h1>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Laudantium, ut excepturi accusantium officia minus cumque
                 perferendis voluptates nisi quas omnis fugit magnam fuga,
                 delectus quisquam repudiandae porro eligendi reprehenderit
@@ -81,8 +87,7 @@
         <div class="wrapper">
             <h2>Events</h2>
             <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            </p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
 
             <div class="grid__events">
                 <div class="event">
@@ -145,6 +150,7 @@
                         <p>Lorem, ipsum dolor</p>
                     </div>
                 </div>
+
             </div>
         </div>
     </section>
@@ -158,8 +164,8 @@
                     <p>
                         Lorem ipsum dolor sit amet consectetur, adipisicing
                         elit. Maiores ducimus sapiente possimus eos numquam
-                        culpa nisi obcaecati ad. Perferendis ad in autem
-                        nisi enim fuga nam a iusto beatae recusandae!
+                        culpa nisi obcaecati ad. Perferendis ad in autem nisi
+                        enim fuga nam a iusto beatae recusandae!
                     </p>
                     <button class=" btn btn--primary">Learn more</button>
                 </div>
@@ -169,50 +175,70 @@
     <section id="gallery">
         <div class="wrapper">
             <h2>Gallery</h2>
+            <div class="sorting">
+                <button class="btn--sorting btn--art">Art</button>
+                <button class="btn--sorting btn--poetry">Poetry</button>
+                <button class="btn--sorting btn--music">Music</button>
+                <button class="btn--sorting btn--theatre">Theatre</button>
+            </div>
             <div class="grid__gallery">
-                <div class="gallery__item">
+                <div class="gallery__item theatre">
                     <img alt="" class="gallery__img" src="img/drummer.jpg" />
                     <div class="gallery__info">
-                        <p>Check them out!</p>
-                        <a href="http://www.bandcamp.com"><i class="fab fa-bandcamp"></i></a>
+                        <p>Check them out!</p><a href="http://www.bandcamp.com"><i class="fab fa-bandcamp"></i></a>
                     </div>
                 </div>
-                <div class="gallery__item">
-                    <img alt="" class="gallery__img" src="img/guitar-3131893_1920.jpg" />
+                <div class="gallery__item theatre">
+                    <img alt="" class="gallery__img" src="img/guitar-3131893_1920.jpg">
                     <div class="gallery__info">
-                        <p>Check them out!</p>
-                        <a href="http://www.bandcamp.com"><i class="fab fa-bandcamp"></i></a>
+                        <p>Check them out!</p><a href="http://www.bandcamp.com"><i class="fab fa-bandcamp"></i></a>
                     </div>
                 </div>
-                <div class="gallery__item">
-                    <img alt="" class="gallery__img" src="img/hostile-886029_1920.jpg" />
+                <div class="gallery__item poetry">
+                    <img alt="" class="gallery__img" src="img/hostile-886029_1920.jpg">
                     <div class="gallery__info">
-                        <p>Check them out!</p>
-                        <a href="http://www.bandcamp.com"><i class="fab fa-bandcamp"></i></a>
+                        <p>Check them out!</p><a href="http://www.bandcamp.com"><i class="fab fa-bandcamp"></i></a>
                     </div>
                 </div>
-                <div class="gallery__item">
-                    <img alt="" class="gallery__img" src="img/people-852427_1920.jpg" />
+                <div class="gallery__item poetry">
+                    <img alt="" class="gallery__img" src="img/people-852427_1920.jpg">
                     <div class="gallery__info">
-                        <p>Check them out!</p>
-                        <a href="http://www.bandcamp.com"><i class="fab fa-bandcamp"></i></a>
+                        <p>Check them out!</p><a href="http://www.bandcamp.com"><i class="fab fa-bandcamp"></i></a>
                     </div>
                 </div>
-                <div class="gallery__item">
-                    <img alt="" class="gallery__img" src="img/crowd.jpg" />
+                <div class="gallery__item music">
+                    <img alt="" class="gallery__img" src="img/crowd.jpg">
                     <div class="gallery__info">
-                        <p>Check them out!</p>
-                        <a href="http://www.bandcamp.com"><i class="fab fa-bandcamp"></i></a>
+                        <p>Check them out!</p><a href="http://www.bandcamp.com"><i class="fab fa-bandcamp"></i></a>
                     </div>
                 </div>
-                <div class="gallery__item">
-                    <img alt="" class="gallery__img" src="img/singer-690117_1920.jpg" />
+                <div class="gallery__item music">
+                    <img alt="" class="gallery__img" src="img/singer-690117_1920.jpg">
                     <div class="gallery__info">
-                        <p>Check them out!</p>
-                        <a href="http://www.bandcamp.com"><i class="fab fa-bandcamp"></i></a>
+                        <p>Check them out!</p><a href="http://www.bandcamp.com"><i class="fab fa-bandcamp"></i></a>
                     </div>
                 </div>
+                <div class="gallery__item art">
+                    <img alt="" class="gallery__img" src="img/guitar-2089802_1920.jpg">
+                    <div class="gallery__info">
+                        <p>Check them out!</p><a href="http://www.bandcamp.com"><i class="fab fa-bandcamp"></i></a>
+                    </div>
+                </div>
+                <div class="gallery__item art">
+                    <img alt="" class="gallery__img" src="img/solo-violinist-619154_1920.jpg">
+                    <div class="gallery__info">
+                        <p>Check them out!</p><a href="http://www.bandcamp.com"><i class="fab fa-bandcamp"></i></a>
+                    </div>
+                </div>
+                <div class="gallery__item music">
+                    <img alt="" class="gallery__img" src="img/concert-316464_1280.jpg">
+                    <div class="gallery__info">
+                        <p>Check them out!</p><a href="http://www.bandcamp.com"><i class="fab fa-bandcamp"></i></a>
+                    </div>
+                </div>
+
             </div>
+
         </div>
     </section>
 
@@ -229,10 +255,7 @@
                         </div>
                     </div>
                     <div class="bottom">
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur
-                            adipisicing elit.
-                        </p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                         <button class="btn btn--primary">Order now!</button>
                     </div>
                 </div>
@@ -245,10 +268,7 @@
                         </div>
                     </div>
                     <div class="bottom">
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur
-                            adipisicing elit.
-                        </p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                         <button class="btn btn--primary">Order now!</button>
                     </div>
                 </div>
@@ -261,10 +281,7 @@
                         </div>
                     </div>
                     <div class="bottom">
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur
-                            adipisicing elit.
-                        </p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                         <button class="btn btn--primary">Order now!</button>
                     </div>
                 </div>
@@ -277,14 +294,12 @@
                         </div>
                     </div>
                     <div class="bottom">
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur
-                            adipisicing elit.
-                        </p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                         <button class="btn btn--primary">Order now!</button>
                     </div>
                 </div>
             </div>
+
         </div>
     </section>
 
@@ -296,28 +311,28 @@
                     <img alt="team" class="team__img" src="img/team4.jpg" />
                     <hgroup>
                         <h5>Jane Doe</h5>
-                        <h6>Saxophone player</h6>
+                        <p>Saxophone player</p>
                     </hgroup>
                 </div>
                 <div class="team__member">
                     <img alt="team" class="team__img" src="img/teamOne.jpg" />
                     <hgroup>
                         <h5>Thomas Something</h5>
-                        <h6>Terrible guitar player</h6>
+                        <p>Terrible guitar player</p>
                     </hgroup>
                 </div>
                 <div class="team__member">
                     <img alt="team" class="team__img" src="img/teamTwo.jpg" />
                     <hgroup>
                         <h5>Dorotea Nyogawe</h5>
-                        <h6>Saxophone player</h6>
+                        <p>Saxophone player</p>
                     </hgroup>
                 </div>
                 <div class="team__member">
                     <img alt="team" class="team__img" src="img/teamThree.jpg" />
                     <hgroup>
                         <h5>Jason Sucks</h5>
-                        <h6>Boring Songwriter</h6>
+                        <p>Boring Songwriter</p>
                     </hgroup>
                 </div>
             </div>
@@ -326,15 +341,15 @@
     <section id="contact">
         <div class="wrapper">
             <h2>Get in Touch</h2>
-            <form class="contact-form" method="get">
+            <form class="contact-form" action="" method="get">
                 <fieldset class="contact--personal">
                     <legend>Personal Data</legend>
                     <label>Name</label>
-                    <input type="text" />
+                    <input type="text">
                     <label>Last Name</label>
-                    <input type="text" />
+                    <input type="text">
                     <label>email</label>
-                    <input type="email" />
+                    <input type="email">
                 </fieldset>
                 <fieldset class="contact--event">
                     <legend>Event Data</legend>
@@ -360,9 +375,7 @@
                     <textarea></textarea>
                 </fieldset>
 
-                <button type="submit" value="Submit" class="btn btn--secondary">
-                    Submit
-                </button>
+                <button type="submit" value="Submit" class="btn btn--secondary">Submit</button>
             </form>
         </div>
     </section>
@@ -371,7 +384,7 @@
             <h2>Location</h2>
             <iframe allowfullscreen height="300"
                 src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJ8aZKIBoULw0RmnqxKY95e7Y&key=AIzaSyA1X2nA79EjyxoUuGNVPAvq50ly4AH3ZDA"
-                style="border:0"></iframe>
+                style="border:0" width="100%"></iframe>
         </div>
     </section>
     <footer>
@@ -383,7 +396,7 @@
                         <p>Amazing Company, Inc.</p>
                         <p>12345 NewYork,</p>
                         <p>United States, 94107</p>
-                        <p>(123) 456-7890</p>
+                        <p> (123) 456-7890</p>
                     </address>
                 </div>
                 <div class="one-3">
@@ -395,18 +408,17 @@
                 <div class="one-3">
                     <ul>
                         <li>Lorem, ipsum ipsam.</li>
-                        <li>dolor sit amet</li>
-                        <li>consectetur adipisicing</li>
-                        <li>Nesciunt numquam,</li>
+                        <li>dolor sit amet </li>
+                        <li>consectetur adipisicing </li>
+                        <li>Nesciunt numquam, </li>
                     </ul>
                 </div>
             </div>
-            <small>© 2019 Anuska Sampedro by
-                <a href="https://www.anuskasampedro.com">anuskasampedro.com</a></small>
+            <small>© 2019 Anuska Sampedro by <a href="https://www.anuskasampedro.com">anuskasampedro.com</a></small>
         </div>
     </footer>
-    <script async defer src="js/jquery.min.js"></script>
-    <script async defer src="js/index.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/index.js"></script>
 </body>
 
 </html>
