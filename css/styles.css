@@ -92,6 +92,7 @@ section {
   background-color: transparent;
   padding: 0.5em;
   border-radius: 0.2em;
+  margin: 1em;
 }
 
 #navigation {
@@ -276,8 +277,8 @@ header p {
 .grid__gallery {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: auto;
-  grid-gap: 3%;
+  grid-auto-rows: 1fr;
+  grid-gap: 1em;
 }
 
 .gallery__item {
@@ -328,9 +329,10 @@ header p {
 .sorting {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: center;
   margin-bottom: 2em;
 }
+
 
 .hide {
   display: none;
@@ -565,6 +567,13 @@ footer ul {
   flex-direction: row;
   justify-content: space-between;
   margin-bottom: 3em;
+}
+
+
+@media screen and (min-width: 1000px) {
+  .grid__gallery {
+    grid-template-columns: repeat(5, 1fr);
+  }
 }
 
 @media (max-width: 600px) {
