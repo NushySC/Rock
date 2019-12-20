@@ -403,8 +403,8 @@ header p {
 .grid__tickets {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: auto;
-  grid-gap: 2%;
+  grid-auto-rows: 1fr;
+  grid-gap: 1em;
 }
 
 .ticket {
